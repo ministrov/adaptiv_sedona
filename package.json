@@ -1,0 +1,33 @@
+{
+  "name": "let_s_go",
+  "version": "1.0.0",
+  "description": "Hello wold!!!",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ministrov/Let_s_go.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ministrov/Let_s_go/issues"
+  },
+  "homepage": "https://github.com/ministrov/Let_s_go#readme",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "^9.8.4",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "stylelint": "13.6.1",
+    "stylelint-config-htmlacademy": "0.1.4"
+  }
+}
