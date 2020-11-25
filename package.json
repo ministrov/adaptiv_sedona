@@ -1,23 +1,25 @@
 {
-  "name": "let_s_go",
+  "name": "adaptiv_sedona",
   "version": "1.0.0",
   "description": "Hello wold!!!",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.sass\" --syntax sass",
+    "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ministrov/Let_s_go.git"
+    "url": "git+https://github.com/ministrov/adaptiv_sedona"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ministrov/Let_s_go/issues"
+    "url": "https://github.com/ministrov/adaptiv_sedona/issues"
   },
-  "homepage": "https://github.com/ministrov/Let_s_go#readme",
+  "homepage": "https://github.com/ministrov/adaptiv_sedona#readme",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "^9.8.4",
