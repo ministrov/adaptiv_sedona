@@ -30,8 +30,98 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-form">
+    <h1 class="visually-hidden">Страница формы сайта Седона</h1>
 
+    <div class="page-form__intro">
+      <p class="page-form__slogan">Оставьте свой отзыв</p>
+      <p class="page-form__text">Помогите нашим отелям стать лучше!
+        Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+
+    <section class="page-form__block">
+      <h2 class="visually-hidden">Пользовательская форма для заполнения</h2>
+      <form class="page-form__form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__group">
+          <h3 class="form__title">Представьтесь:</h3>
+          <div class="form__division">
+            <label class="form__label" for="user-name">Имя*:</label>
+            <input class="form__input" id="user-name" type="text" name="user-name" placeholder="Пётр" required>
+          </div>
+          <div class="form__division">
+            <label class="form__label" for="surename">Фамилия*:</label>
+            <input class="form__input" id="surename" type="text" name="surename" placeholder="Иванов" required>
+          </div>
+          <div class="form__division">
+            <label class="form__label" for="second-name">Отчество:</label>
+            <input class="form__input" id="second-name" type="text" name="second-name" placeholder="Александрович">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__info user-information">
+          <h3 class="user-information__title">Контактная информация:</h3>
+          <div class="user-information__division">
+            <label class="user-information__label" for="phone-number">Контактный телефон*:</label>
+            <input class="user-information__input" id="phone-number" type="text" name="phone-number" placeholder="Введите телефон" required>
+          </div>
+          <div class="user-information__division">
+            <label class="user-information__label" for="user-email">Электронная почта*:</label>
+            <input class="user-information__input" id="user-email" type="text" name="user-email">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__radio">
+          <h3 class="form__radio-title">Ваше общее впечатление:</h3>
+          <ul class="form__radio-list">
+            <li class="form__radio-item">
+              <input class="form__radio-input visually-hidden" id="positive-emotion" type="radio" name="positive-emotion" checked>
+              <label class="form__radio-label" for="positive-emotion">Скорее положительное</label>
+            </li>
+            <li class="form__radio-item">
+              <input class="form__radio-input visually-hidden" id="negative-emotion" type="radio" name="negative-emotion">
+              <label class="form__radio-label" for="negative-emotion">Скорее отрицательное</label>
+            </li>
+            <li class="form__radio-item">
+              <input class="form__radio-input visually-hidden" id="no-answer" type="radio" name="no-answer">
+              <label class="form__radio-label" for="no-answer">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__checkbox">
+          <h3 class="form__checkbox-title">Посещенные достопримечательности:</h3>
+          <ul class="form__checkbox-list">
+            <li class="form__checkbox-item">
+              <input class="form__checkbox-input" id="devil-bridge" type="checkbox" name="devil-bridge" checked>
+              <label for="devil-bridge">Мост Дьявола</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox-input" id="mountain-of-bell" type="checkbox" name="mountain-of-bell" checked>
+              <label for="mountain-of-bell">Гора-Колокол</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox-input" id="slide-park" type="checkbox" name="slide-park" checked>
+              <label for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox-input" id="red-cliff" type="checkbox" name="red-cliff">
+              <label for="red-cliff">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+
+
+        <fieldset class="form__textarea">
+          <h3 class="form__textarea-title">Опишите свои эмоции:</h3>
+          <label class="form__textarea-label">
+            <textarea class="form__textarea-textarea" name="comment-field" rows="8" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+        </fieldset>
+
+        <button class="form__button" type="submit">Отправить отзыв</button>
+        <p class="form__required">* — обязательные поля</p>
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer">
