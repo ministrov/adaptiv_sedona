@@ -1,8 +1,15 @@
+.main-nav {
+  background-color: $white-background;
+}
+
 .main-nav__list {
   list-style: none;
 }
 
 .main-nav__link {
+  @include font-size($low-size);
+  font-weight: 700;
+  line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
 }

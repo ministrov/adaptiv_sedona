@@ -41,10 +41,16 @@ a {
   font-style: normal;
   font-display: swap; }
 
+.main-nav {
+  background-color: #ffffff; }
+
 .main-nav__list {
   list-style: none; }
 
 .main-nav__link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
   text-transform: uppercase;
   text-decoration: none; }
 

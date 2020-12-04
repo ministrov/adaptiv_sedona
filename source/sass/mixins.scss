@@ -1,0 +1,29 @@
+// Mixins
+
+@mixin size ($width, $heigth) {
+  width: $size;
+  height: $size;
+}
+
+@mixin font-size ($size) {
+  font-size: $size;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin outline () {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+@mixin outline-red () {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+@mixin outline-blue () {
+  outline: 5px solid rgba(0, 0, 255, 0.3);
+  outline-offset: -5px;
+}
