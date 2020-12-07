@@ -1,0 +1,7 @@
+.reasons__text {
+  @include font-size ($very-low-size);
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $arch-linux;
+}

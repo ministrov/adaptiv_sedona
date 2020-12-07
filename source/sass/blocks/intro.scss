@@ -1,0 +1,9 @@
+.intro {
+  background-color: $white-background;
+}
+
+.intro__slogan {
+  @include font-size ($low-size);
+  line-height: 26px;
+  text-transform: uppercase;
+}
