@@ -1,0 +1,10 @@
+.page-footer {
+  background-color: $white-background;
+}
+
+.page-footer__text {
+  @include font-size ($medium-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 26px;
+}

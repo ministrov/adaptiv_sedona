@@ -1,0 +1,11 @@
+.button {
+  display: inline-block;
+  width: 280px;
+  font-family: inherit;
+  @include font-size ($medium-size);
+  font-weight: 700;
+  line-height: 46px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  background-color: $light-blue-grey;
+}

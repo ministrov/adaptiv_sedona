@@ -1,0 +1,10 @@
+.copyright {
+  background-color: $white-background;
+}
+
+.copyright__text {
+  @include font-size ($very-low-size);
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $black;
+}

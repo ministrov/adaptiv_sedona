@@ -41,6 +41,17 @@ a {
   font-style: normal;
   font-display: swap; }
 
+.button {
+  display: inline-block;
+  width: 280px;
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 46px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  background-color: #81b3d3; }
+
 .main-nav {
   background-color: #ffffff; }
 
@@ -121,5 +132,39 @@ a {
   line-height: 24px;
   text-transform: uppercase;
   color: #333333; }
+
+.search-hotel__btn {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.socials {
+  background-color: #ffffff; }
+
+.socials__list {
+  list-style: none; }
+
+.socials__link {
+  display: inline-block;
+  width: 48px;
+  height: 48px; }
+
+.page-footer {
+  background-color: #ffffff; }
+
+.page-footer__text {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 26px; }
+
+.copyright {
+  background-color: #ffffff; }
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000; }
 
 /*# sourceMappingURL=style.css.map */
