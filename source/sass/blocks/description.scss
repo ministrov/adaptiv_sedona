@@ -1,0 +1,21 @@
+.description {
+  background-color: $white-background;
+}
+
+.description__list {
+  list-style: none;
+}
+
+.description__title {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.description__text {
+  @include font-size ($very-low-size);
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $arch-linux;
+}

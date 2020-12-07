@@ -1,0 +1,22 @@
+.feature {
+  text-align: center;
+}
+
+.feature__title {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.feature__number {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.feature__text {
+  @include font-size ($low-size);
+  font-weight: 700;
+  text-transform: uppercase;
+}
