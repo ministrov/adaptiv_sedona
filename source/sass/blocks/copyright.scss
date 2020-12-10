@@ -1,8 +1,11 @@
 .copyright {
+  @include flex;
+  justify-content: center;
   background-color: $white-background;
 }
 
 .copyright__text {
+  margin-right: 10px;
   @include font-size ($very-low-size);
   line-height: 26px;
   text-transform: uppercase;

@@ -1,10 +1,5 @@
 // Mixins
 
-@mixin size ($width, $heigth) {
-  width: $size;
-  height: $size;
-}
-
 @mixin font-size ($size) {
   font-size: $size;
 }

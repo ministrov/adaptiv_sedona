@@ -3,11 +3,55 @@
 }
 
 .socials__list {
+  @include flex;
+  justify-content: center;
   list-style: none;
 }
 
 .socials__link {
+  position: relative;
   display: inline-block;
+  margin-right: 10px;
   width: 48px;
   height: 48px;
+  background-color: $light-blue-grey;
+}
+
+.socials__link--twitter {
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 18px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    background-image: url("../img/icon-twitter.svg");
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.socials__link--facebook {
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 9px;
+    height: 19px;
+    top: 50%;
+    left: 50%;
+    background-image: url("../img/icon-facebook.svg");
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.socials__link--youtube {
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 20px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    background-image: url("../img/icon-youtube.svg");
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
