@@ -1,0 +1,123 @@
+.form {
+  background-color: $white-background;
+}
+
+.form__group {
+  border: none;
+}
+
+.form__title {
+  @include font-size ($low-size);
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+.form__label {
+  @include font-size ($very-low-size);
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $arch-linux;
+}
+
+.form__input {
+  @include font-size ($low-size);
+  line-height: 26px;
+  font-weight: 700;
+  background-color: $grey;
+  border: none;
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.form__info {
+  border: none;
+}
+
+.form__radio {
+  border: none;
+}
+
+.form__radio-title {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+.form__radio-list {
+  list-style: none;
+}
+
+.form__radio-label {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+}
+
+.form__checkbox {
+  border: none;
+}
+
+.form__checkbox-title {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+.form__checkbox-list {
+  list-style: none;
+}
+
+.form__checkbox__label {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+}
+
+.form__textarea {
+  min-width: 320px;
+  border: none;
+}
+
+.form__textarea-title {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+.form__textarea-textarea {
+  max-width: 300px;
+  @include font-size ($low-size);
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: $grey;
+  border: none;
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.form__button {
+  margin-top: 50px;
+}
+
+.form__required {
+  display: none;
+}

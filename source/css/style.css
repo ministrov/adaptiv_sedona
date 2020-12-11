@@ -55,6 +55,14 @@ img {
   vertical-align: middle;
   background-color: #81b3d3; }
 
+.button--form {
+  width: 320px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff; }
+
 .main-nav {
   background-color: #ffffff; }
 
@@ -208,6 +216,7 @@ img {
 
 .copyright__text {
   margin-right: 10px;
+  margin-top: 0;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
@@ -221,6 +230,7 @@ img {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000; }
 
 .page-gallery__text {
@@ -228,6 +238,10 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: #333333; }
+
+.page-gallery__block {
+  position: relative;
+  margin-bottom: 78px; }
 
 .gallery-card {
   background-color: #ffffff; }
@@ -258,6 +272,7 @@ img {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   color: #000000; }
 
 .video-pres__text {
@@ -265,5 +280,176 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: #333333; }
+
+.video-pres__controls {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  top: 285px;
+  left: 0;
+  z-index: 10;
+  background-color: #000000;
+  opacity: 0.2; }
+
+.video-pres__controls--lower {
+  height: 66px;
+  top: 320px;
+  background-color: #f2f2f2;
+  opacity: 1; }
+
+.page-form {
+  background-color: #ffffff; }
+
+.page-form__slogan {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000; }
+
+.page-form__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #333333; }
+
+.form {
+  background-color: #ffffff; }
+
+.form__group {
+  border: none; }
+
+.form__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000; }
+
+.form__label {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333; }
+
+.form__input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none; }
+  .form__input::-moz-placeholder {
+    color: #000000; }
+  .form__input:-ms-input-placeholder {
+    color: #000000; }
+  .form__input::placeholder {
+    color: #000000; }
+
+.form__info {
+  border: none; }
+
+.form__radio {
+  border: none; }
+
+.form__radio-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000; }
+
+.form__radio-list {
+  list-style: none; }
+
+.form__radio-label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000; }
+
+.form__checkbox {
+  border: none; }
+
+.form__checkbox-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000; }
+
+.form__checkbox-list {
+  list-style: none; }
+
+.form__checkbox__label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000; }
+
+.form__textarea {
+  min-width: 320px;
+  border: none; }
+
+.form__textarea-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000; }
+
+.form__textarea-textarea {
+  max-width: 300px;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  border: none; }
+  .form__textarea-textarea::-moz-placeholder {
+    color: #000000; }
+  .form__textarea-textarea:-ms-input-placeholder {
+    color: #000000; }
+  .form__textarea-textarea::placeholder {
+    color: #000000; }
+
+.form__button {
+  margin-top: 50px; }
+
+.form__required {
+  display: none; }
+
+.user-information {
+  background-color: #ffffff; }
+
+.user-information__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000; }
+
+.user-information__label {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333; }
+
+.user-information__input {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  border: none; }
+  .user-information__input::-moz-placeholder {
+    color: #000000; }
+  .user-information__input:-ms-input-placeholder {
+    color: #000000; }
+  .user-information__input::placeholder {
+    color: #000000; }
 
 /*# sourceMappingURL=style.css.map */

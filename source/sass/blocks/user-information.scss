@@ -1,8 +1,8 @@
-.page-gallery {
+.user-information {
   background-color: $white-background;
 }
 
-.page-gallery__title {
+.user-information__title {
   @include font-size ($low-size);
   font-weight: 700;
   line-height: 26px;
@@ -11,14 +11,21 @@
   color: $black;
 }
 
-.page-gallery__text {
+.user-information__label {
   @include font-size ($very-low-size);
-  line-height: 24px;
+  line-height: 26px;
   text-transform: uppercase;
   color: $arch-linux;
 }
 
-.page-gallery__block {
-  position: relative;
-  margin-bottom: 78px;
+.user-information__input {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  background-color: $grey;
+  border: none;
+
+  &::placeholder {
+    color: $black;
+  }
 }

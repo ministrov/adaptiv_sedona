@@ -1,24 +1,18 @@
-.page-gallery {
+.page-form {
   background-color: $white-background;
 }
 
-.page-gallery__title {
+.page-form__slogan {
   @include font-size ($low-size);
-  font-weight: 700;
   line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
   color: $black;
 }
 
-.page-gallery__text {
+.page-form__text {
   @include font-size ($very-low-size);
   line-height: 24px;
   text-transform: uppercase;
   color: $arch-linux;
-}
-
-.page-gallery__block {
-  position: relative;
-  margin-bottom: 78px;
 }

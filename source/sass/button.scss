@@ -9,3 +9,12 @@
   vertical-align: middle;
   background-color: $light-blue-grey;
 }
+
+.button--form {
+  width: 320px;
+  @include font-size ($medium-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  color: $white-background;
+}

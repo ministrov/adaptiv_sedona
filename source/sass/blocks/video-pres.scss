@@ -7,6 +7,7 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   color: $black;
 }
 
@@ -15,4 +16,22 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $arch-linux;
+}
+
+.video-pres__controls {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  top: 285px;
+  left: 0;
+  z-index: 10;
+  background-color: $black;
+  opacity: 0.2;
+}
+
+.video-pres__controls--lower {
+  height: 66px;
+  top: 320px;
+  background-color: $grey;
+  opacity: 1;
 }
