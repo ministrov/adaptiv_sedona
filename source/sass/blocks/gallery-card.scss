@@ -1,0 +1,24 @@
+.gallery-card {
+  background-color: $white-background;
+}
+
+.gallery-card__title {
+  @include font-size ($very-low-size);
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.gallery-card__author {
+  @include font-size ($very-low-size);
+  line-height: 24px;
+  color: $arch-linux;
+}
+
+.gallery-card__number {
+  @include font-size ($very-low-size);
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}

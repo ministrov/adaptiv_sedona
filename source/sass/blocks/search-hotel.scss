@@ -16,3 +16,9 @@
   text-transform: uppercase;
   color: $arch-linux;
 }
+
+.search-hotel__btn {
+  @include font-size ($medium-size);
+  text-transform: uppercase;
+  color: $white-background;
+}

@@ -1,0 +1,31 @@
+.user-information {
+  background-color: $white-background;
+}
+
+.user-information__title {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+.user-information__label {
+  @include font-size ($very-low-size);
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $arch-linux;
+}
+
+.user-information__input {
+  @include font-size ($low-size);
+  font-weight: 700;
+  line-height: 26px;
+  background-color: $grey;
+  border: none;
+
+  &::placeholder {
+    color: $black;
+  }
+}

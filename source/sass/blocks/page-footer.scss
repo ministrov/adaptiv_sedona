@@ -1,0 +1,16 @@
+.page-footer {
+  background-color: $white-background;
+}
+
+.page-footer__text {
+  margin-bottom: 35px;
+  @include font-size ($medium-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 26px;
+}
+
+.page-footer__socials {
+  margin-bottom: 45px;
+}
