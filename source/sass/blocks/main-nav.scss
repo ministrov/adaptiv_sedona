@@ -2,8 +2,31 @@
   background-color: $white-background;
 }
 
+.main-nav__logo-wrapper {
+  @include flex;
+  justify-content: center;
+}
+
+.main-nav__toggle {
+  border: none;
+  background-color: $white-background;
+}
+
 .main-nav__list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
   list-style: none;
+  background-color: $light-blue-grey;
+}
+
+.main-nav__item {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $light-blue-grey;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px
+   rgba(255, 255, 255, 0.2);
 }
 
 .main-nav__link {
@@ -12,4 +35,8 @@
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.main-nav--opened .main-nav__link {
+  color: $white-background;
 }
