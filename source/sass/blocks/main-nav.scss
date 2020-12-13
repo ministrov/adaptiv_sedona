@@ -7,6 +7,11 @@
   justify-content: center;
 }
 
+.main-nav__logo {
+  position: relative;
+  z-index: 8;
+}
+
 .main-nav__toggle {
   border: none;
   background-color: $white-background;
@@ -39,4 +44,20 @@
 
 .main-nav--opened .main-nav__link {
   color: $white-background;
+}
+
+.main-nav--opened .main-nav__svg--cross {
+  position: absolute;
+  top: 105px;
+  right: 26px;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  position: absolute;
+  top: 32px;
+  right: 0;
 }

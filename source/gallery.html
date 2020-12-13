@@ -8,16 +8,19 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo">
           <img class="main-nav__img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-          <svg width="23" height="22" viewBox="0 0 23 22" fill="#81b3d3" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-nav__svg main-nav__svg--burger" width="23" height="22" viewBox="0 0 23 22" fill="#81b3d3" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
             <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
             <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+          </svg>
+          <svg class="main-nav__svg main-nav__svg--cross" width="23" height="23" viewBox="0 0 23 23" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
           </svg>
         </button>
       </div>
@@ -41,6 +44,7 @@
   <main class="page-gallery">
     <h1 class="visually-hidden">Фотогалерея сайта Седона</h1>
     <div class="page-gallery__intro">
+      <img class="page-gallery__img" src="img/back-mobile.jpg" alt="Пейзаж гор Седоны в штате Аризоны">
       <h2 class="page-gallery__title">Фото и видео</h2>
       <p class="page-gallery__text">Не можете решиться на путешествие из-за
          курса? Фотографии помогут вам забыть о политике и экономике.</p>

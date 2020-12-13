@@ -8,16 +8,19 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo">
           <img class="main-nav__img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-          <svg width="23" height="22" viewBox="0 0 23 22" fill="#81b3d3" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-nav__svg main-nav__svg--burger" width="23" height="22" viewBox="0 0 23 22" fill="#81b3d3" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
             <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
             <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+          </svg>
+          <svg class="main-nav__svg main-nav__svg--cross" width="23" height="23" viewBox="0 0 23 23" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
           </svg>
         </button>
       </div>
@@ -41,12 +44,13 @@
   <main class="page-main">
     <h1 class="visually-hidden">Сайт небольшого городка Седона, у которого есть свои достопримечательности</h1>
     <section class="intro">
-      <h2 class="intro__slogan">Cедона-небольшой городок в Аризоне,заслуживающий большего!</h2>
+      <img class="intro__img" src="img/back-mobile.jpg" alt="Пейзаж гор Седоны в штате Аризоны">
+      <h2 class="intro__slogan">Cедона-небольшой<br> городок в Аризоне, заслуживающий большего!</h2>
     </section>
 
     <section class="reasons">
       <h2 class="visually-hidden">Преимущества перед Гранд Каньоном</h2>
-      <p class="reasons__text">Рассмотрим 5 причин,по которым Седона круче,чем гранд каньон!</p>
+      <p class="reasons__text">Рассмотрим 5 причин,по которым<br> Седона круче,чем гранд каньон!</p>
       <div class="reasons__block feature">
         <h3 class="feature__title">настоящий городок</h3>
         <span class="feature__number">— №1 —</span>
