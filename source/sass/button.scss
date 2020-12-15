@@ -8,6 +8,21 @@
   box-sizing: border-box;
   vertical-align: middle;
   background-color: $light-blue-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: $white-active;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $grey-disabled;
+  }
 }
 
 .button--form {

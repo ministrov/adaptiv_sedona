@@ -12,3 +12,13 @@
   text-transform: uppercase;
   color: $black;
 }
+
+.copyright__svg--htmlacademy:hover path,
+.copyright__svg--htmlacademy:focus path {
+  fill: $light-blue-grey;
+}
+
+.copyright__svg--htmlacademy:active path {
+  fill: $black;
+  opacity: .3;
+}

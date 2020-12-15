@@ -8,25 +8,15 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <div class="main-nav__logo-wrapper">
-        <a class="main-nav__logo">
-          <img class="main-nav__img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-          <svg class="main-nav__svg main-nav__svg--burger" width="23" height="22" viewBox="0 0 23 22" fill="#81b3d3" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
-          </svg>
-          <svg class="main-nav__svg main-nav__svg--cross" width="23" height="23" viewBox="0 0 23 23" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
-          </svg>
-        </button>
-      </div>
+    <nav class="main-nav main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-label="Закрыть меню">
+            <svg class="main-nav__svg main-nav__svg--cross" width="23" height="23" viewBox="0 0 23 23" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
+            </svg>
+          </button>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Фото и Видео</a>
@@ -38,6 +28,18 @@
           <a class="main-nav__link" href="https://htmlacademy.ru/study">htmladademy</a>
         </li>
       </ul>
+      <div class="main-nav__logo-wrapper">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+        </a>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <svg class="main-nav__svg main-nav__svg--burger" width="23" height="22" viewBox="0 0 23 22" fill="#81b3d3" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+          </svg>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -138,9 +140,12 @@
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__img" src="img/htmlacademy.svg" alt="Логотип htmlacademy">
+        <svg class="copyright__svg copyright__svg--htmlacademy" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+        </svg>
       </a>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
