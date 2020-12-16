@@ -13,10 +13,6 @@
   }
 }
 
-.intro .main-nav--opened {
-  top: 329px;
-}
-
 .intro__slogan {
   @include font-size ($low-size);
   line-height: 26px;
