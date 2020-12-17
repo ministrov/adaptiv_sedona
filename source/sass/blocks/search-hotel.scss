@@ -3,7 +3,12 @@
   text-align: center;
 }
 
+.search-hotel__block {
+  padding-top: 33px;
+}
+
 .search-hotel__slogan {
+  margin: 0;
   @include font-size ($medium-size);
   font-weight: 700;
   line-height: 26px;
@@ -11,6 +16,7 @@
 }
 
 .search-hotel__text {
+  margin-top: 40px;
   @include font-size ($very-low-size);
   line-height: 24px;
   text-transform: uppercase;
@@ -18,7 +24,12 @@
 }
 
 .search-hotel__btn {
+  margin-top: 27px;
   @include font-size ($medium-size);
   text-transform: uppercase;
   color: $white-background;
+}
+
+.search-hotel__map {
+  margin-top: 49px;
 }

@@ -46,8 +46,13 @@
   <main class="page-main">
     <h1 class="visually-hidden">Сайт небольшого городка Седона, у которого есть свои достопримечательности</h1>
     <section class="intro">
-      <img class="intro__img" src="img/back-mobile.jpg" alt="Пейзаж гор Седоны в штате Аризоны">
-      <h2 class="intro__slogan">Cедона-небольшой<br> городок в Аризоне, заслуживающий большего!</h2>
+      <div class="intro__container container">
+        <img class="intro__img" src="img/text-index-mobile.svg" height="" alt="Welcome to gorgeous Sedona">
+      </div>
+    </section>
+
+    <section class="page-main__heading">
+      <h2 class="page-main__title">Cедона-небольшой<br> городок в Аризоне, заслуживающий большего!</h2>
     </section>
 
     <section class="reasons reasons__section">
@@ -55,13 +60,15 @@
       <p class="reasons__text">Рассмотрим 5 причин,по которым<br> Седона круче,чем гранд каньон!</p>
       <div class="reasons__block feature">
         <div class="feature__wrapper">
-          <h3 class="feature__title">настоящий городок</h3>
-          <span class="feature__number">— №1 —</span>
-          <p class="feature__text">седона не атракцион для туристов,там течет своя жизнь</p>
+          <div class="container">
+            <h3 class="feature__title">настоящий городок</h3>
+            <span class="feature__number">— №1 —</span>
+            <p class="feature__text">седона не атракцион для туристов,там течет своя жизнь</p>
+          </div>
         </div>
         <img class="feature__img" src="img/photo-city@1x.jpg" alt="Здание с государственным флагом в городе Седона">
       </div>
-      <div class="reasons__desc description">
+      <div class="reasons__desc description container">
         <ul class="description__list">
           <li class="description__item">
             <h4 class="description__title">Жилье</h4>
@@ -78,7 +85,7 @@
         </ul>
       </div>
       <div class="reasons__block feature reasons__block--second">
-        <div class="feature__wrapper-second">
+        <div class="feature__wrapper-second container">
           <h3 class="feature__title">Там есть мост дьявола</h3>
           <span class="feature__number">— №2 —</span>
           <p class="feature__text">Да,по нему можно пройти!Если вы осмелитесь,конечно</p>
@@ -86,32 +93,36 @@
         <img class="feature__img" src="img/photo-bridge@1x.jpg" alt="Пейзаж дьявольского моста в городе Седона">
       </div>
       <div class="reasons__block-wrapper">
-        <div class="reasons__block feature">
-          <h3 class="feature__title">Небольшая площадь</h3>
-          <span class="feature__number">— №3 —</span>
-          <p class="feature__text">Все интересные места находятся очень близко</p>
-        </div>
+        <div class="container">
+          <div class="reasons__block feature">
+            <h3 class="feature__title">Небольшая площадь</h3>
+            <span class="feature__number">— №3 —</span>
+            <p class="feature__text">Все интересные места находятся очень близко</p>
+          </div>
 
-        <div class="reasons__block feature">
-          <h3 class="feature__title">Красивая дорога</h3>
-          <span class="feature__number">— №4 —</span>
-          <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-        </div>
+          <div class="reasons__block feature">
+            <h3 class="feature__title">Красивая дорога</h3>
+            <span class="feature__number">— №4 —</span>
+            <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
 
-        <div class="reasons__block feature">
-          <h3 class="feature__title">Мало туристов</h3>
-          <span class="feature__number">— №5 —</span>
-          <p class="feature__text">Большинство едет в гранд каньон и толпится там</p>
+          <div class="reasons__block feature">
+            <h3 class="feature__title">Мало туристов</h3>
+            <span class="feature__number">— №5 —</span>
+            <p class="feature__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="search-hotel">
-      <h2 class="visually-hidden">Поиск отеля</h2>
-      <p class="search-hotel__slogan">Заинтересовались?</p>
-      <p class="search-hotel__text">Укажите предполагаемые даты поездки,
-        и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a class="search-hotel__btn button" href="#">Найти гостиницу</a>
+    <section class="search-hotel search-hotel__block">
+      <div class="container">
+        <h2 class="visually-hidden">Поиск отеля</h2>
+        <p class="search-hotel__slogan">Заинтересовались?</p>
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="search-hotel__btn button" href="#">Найти гостиницу</a>
+      </div>
       <div class="search-hotel__map">
        <img class="search-hotel__img" src="img/map-mobile.jpg" alt="Карта штата Аризона">
       </div>

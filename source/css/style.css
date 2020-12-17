@@ -73,7 +73,7 @@ img {
 
 .page-header {
   position: relative;
-  z-index: 0; }
+  z-index: 8; }
 
 .main-nav {
   background-color: #ffffff; }
@@ -138,22 +138,23 @@ img {
   right: 0; }
 
 .intro {
-  background-color: #ffffff; }
+  position: relative;
+  background-color: #ffffff;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat; }
   .intro::after {
     position: absolute;
     content: " ";
     width: 100%;
     height: 57px;
-    top: 388px;
+    top: 332px;
     left: 0;
     background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat; }
 
-.intro__slogan {
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center; }
+.intro__container {
+  padding-top: 90px;
+  padding-bottom: 85px; }
 
 .reasons {
   position: relative; }
@@ -274,22 +275,31 @@ img {
   background-color: #ffffff;
   text-align: center; }
 
+.search-hotel__block {
+  padding-top: 33px; }
+
 .search-hotel__slogan {
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase; }
 
 .search-hotel__text {
+  margin-top: 40px;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   color: #333333; }
 
 .search-hotel__btn {
+  margin-top: 27px;
   font-size: 21px;
   text-transform: uppercase;
   color: #ffffff; }
+
+.search-hotel__map {
+  margin-top: 49px; }
 
 .socials {
   background-color: #ffffff; }
@@ -606,5 +616,15 @@ img {
     color: #000000; }
   .user-information__input::placeholder {
     color: #000000; }
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.page-main__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
