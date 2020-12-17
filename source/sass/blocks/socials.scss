@@ -4,6 +4,7 @@
 
 .socials__list {
   @include flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
 }
@@ -15,6 +16,15 @@
   width: 48px;
   height: 48px;
   background-color: $light-blue-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $white-active;
+  }
 }
 
 .socials__link--twitter {
