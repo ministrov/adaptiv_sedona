@@ -28,6 +28,10 @@
   right: 20px;
 }
 
+.main-nav--nojs .main-nav__toggle--close {
+  display: none;
+}
+
 .main-nav__list {
   display: none;
   margin: 0;
