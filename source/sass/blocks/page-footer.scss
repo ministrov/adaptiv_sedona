@@ -2,6 +2,14 @@
   background-color: $white-background;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    @include flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .page-footer__text {
   margin-bottom: 35px;
   @include font-size ($medium-size);
@@ -13,4 +21,8 @@
 
 .page-footer__socials {
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 36px;
+  }
 }

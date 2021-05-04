@@ -7,11 +7,28 @@
   @include flex;
   justify-content: center;
   height: 56px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__logo {
   position: absolute;
   z-index: 8;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo {
+    position: relative;
+    width: 102px;
+    & img {
+      position: absolute;
+      top: 0;
+      width: 102px;
+    }
+  } 
 }
 
 .main-nav__toggle {
@@ -39,6 +56,13 @@
   text-align: center;
   list-style: none;
   background-color: $light-blue-grey;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .main-nav__item {
@@ -49,6 +73,16 @@
   background-color: $light-blue-grey;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px
    rgba(255, 255, 255, 0.2);
+  
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .main-nav__link {

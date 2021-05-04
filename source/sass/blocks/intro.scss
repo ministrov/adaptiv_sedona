@@ -4,6 +4,10 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
 
+  @media (min-width: $tablet-width) {
+    background-size: 100% 100%;
+  }
+
   &::after {
     position: absolute;
     content: " ";
@@ -13,6 +17,12 @@
     left: 0;
     background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 54px;
+      top: 340px;
+      background-size: 100% 100%;
+    }
   }
 }
 

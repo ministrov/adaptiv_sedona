@@ -7,12 +7,16 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-size ($medium-size);
+  }
 }
 
 .feature__number {
-  @include font-size ($low-size);
-  font-weight: 700;
-  line-height: 26px;
+  @include font-size ($very-low-size);
+  font-weight: inherit;
+  line-height: 21px;
 }
 
 .feature__wrapper {

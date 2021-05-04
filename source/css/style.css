@@ -83,10 +83,22 @@ img {
   display: flex;
   justify-content: center;
   height: 56px; }
+  @media (min-width: 768px) {
+    .main-nav__logo-wrapper {
+      display: none; } }
 
 .main-nav__logo {
   position: absolute;
   z-index: 8; }
+
+@media (min-width: 768px) {
+  .main-nav__logo {
+    position: relative;
+    width: 102px; }
+    .main-nav__logo img {
+      position: absolute;
+      top: 0;
+      width: 102px; } }
 
 .main-nav__toggle {
   position: absolute;
@@ -110,6 +122,12 @@ img {
   text-align: center;
   list-style: none;
   background-color: #81b3d2; }
+  @media (min-width: 768px) {
+    .main-nav__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; } }
 
 .main-nav__item {
   position: relative;
@@ -118,6 +136,12 @@ img {
   padding-bottom: 10px;
   background-color: #81b3d2;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2); }
+  @media (min-width: 768px) {
+    .main-nav__item {
+      margin-right: 40px; } }
+  @media (min-width: 768px) {
+    .main-nav__item:last-child {
+      margin-right: 0; } }
 
 .main-nav__link {
   font-size: 18px;
@@ -145,6 +169,9 @@ img {
   background-color: #ffffff;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .intro {
+      background-size: 100% 100%; } }
   .intro::after {
     position: absolute;
     content: " ";
@@ -154,6 +181,11 @@ img {
     left: 0;
     background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      .intro::after {
+        height: 54px;
+        top: 340px;
+        background-size: 100% 100%; } }
 
 .intro__container {
   padding-top: 90px;
@@ -170,9 +202,9 @@ img {
     left: 0;
     background-image: url("../img/white-copy.svg");
     background-repeat: no-repeat; }
-
-.reasons__section {
-  margin-top: 47px; }
+  @media (min-width: 768px) {
+    .reasons::before {
+      display: none; } }
 
 .reasons__text {
   margin-bottom: 0;
@@ -181,21 +213,56 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  color: #333333; }
+  color: #000000; }
+  @media (min-width: 768px) {
+    .reasons__text {
+      margin-bottom: 52px;
+      color: #333333; }
+      .reasons__text br {
+        display: none; } }
 
 .reasons__block {
   margin-top: 25px; }
 
+@media (min-width: 768px) {
+  .reasons__block--first {
+    display: flex; } }
+
 .reasons__block--second {
   margin-top: 35px; }
+
+@media (min-width: 768px) {
+  .reasons__block--second {
+    display: flex;
+    flex-direction: row-reverse; } }
 
 .reasons__block-wrapper {
   padding-top: 25px;
   background-color: #eeeeee; }
   .reasons__block-wrapper .reasons__block {
     border-bottom: 2px solid #d6d6d6; }
+    @media (min-width: 768px) {
+      .reasons__block-wrapper .reasons__block {
+        border-bottom: none; } }
   .reasons__block-wrapper .feature__text {
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px; }
+  @media (min-width: 768px) {
+    .reasons__block-wrapper {
+      padding-top: 41px;
+      padding-bottom: 62px;
+      padding-left: 40px;
+      padding-right: 40px; } }
+
+@media (min-width: 768px) {
+  .reasons__desc {
+    padding-top: 157px; } }
+
+@media (min-width: 768px) {
+  .reasons__block-container {
+    display: flex; } }
 
 .feature {
   text-align: center; }
@@ -205,11 +272,14 @@ img {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .feature__title {
+      font-size: 21px; } }
 
 .feature__number {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px; }
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 21px; }
 
 .feature__wrapper {
   background-color: #81b3d2; }
@@ -257,6 +327,17 @@ img {
   margin-left: 70px;
   padding: 0;
   list-style: none; }
+  @media (min-width: 768px) {
+    .description__list {
+      display: flex;
+      max-width: none; } }
+
+@media (min-width: 768px) {
+  .description__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34%; } }
 
 .description__title {
   margin: 0;
@@ -273,13 +354,15 @@ img {
   line-height: 21px;
   text-transform: uppercase;
   color: #333333; }
+  @media (min-width: 768px) {
+    .description__text {
+      width: 184px;
+      margin-top: 37px;
+      text-align: center; } }
 
 .search-hotel {
   background-color: #ffffff;
   text-align: center; }
-
-.search-hotel__block {
-  padding-top: 33px; }
 
 .search-hotel__slogan {
   margin: 0;
@@ -287,6 +370,9 @@ img {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .search-hotel__slogan {
+      font-size: 30px; } }
 
 .search-hotel__text {
   margin-top: 40px;
@@ -294,12 +380,24 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: #333333; }
+  @media (min-width: 768px) {
+    .search-hotel__text {
+      margin-top: 48px; } }
 
 .search-hotel__btn {
   margin-top: 27px;
   font-size: 21px;
   text-transform: uppercase;
   color: #ffffff; }
+  @media (min-width: 768px) {
+    .search-hotel__btn {
+      min-width: 458px;
+      height: 58px;
+      margin-top: 37px;
+      padding-top: 5px;
+      padding-bottom: 0;
+      padding-left: 121px;
+      padding-right: 121px; } }
 
 .search-hotel__map {
   margin-top: 49px; }
@@ -358,6 +456,12 @@ img {
 .page-footer {
   background-color: #ffffff; }
 
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; } }
+
 .page-footer__text {
   margin-bottom: 35px;
   font-size: 21px;
@@ -368,6 +472,9 @@ img {
 
 .page-footer__socials {
   margin-bottom: 45px; }
+  @media (min-width: 768px) {
+    .page-footer__socials {
+      margin-top: 36px; } }
 
 .copyright {
   display: flex;
@@ -624,10 +731,34 @@ img {
   padding-left: 20px;
   padding-right: 20px; }
 
+@media (min-width: 768px) {
+  .page-main__heading {
+    margin-top: 43px; } }
+
 .page-main__title {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center; }
+  @media (min-width: 768px) {
+    .page-main__title {
+      width: 591px;
+      margin-left: 85px;
+      font-size: 21px; } }
+  @media (min-width: 768px) {
+    .page-main__title br {
+      display: none; } }
+
+.page-main__reasons {
+  margin-top: 47px; }
+
+.page-main__search-hotel {
+  padding-top: 33px; }
+  @media (min-width: 768px) {
+    .page-main__search-hotel {
+      padding-top: 57px;
+      padding-bottom: 57px;
+      padding-left: 155px;
+      padding-right: 155px; } }
 
 /*# sourceMappingURL=style.css.map */
