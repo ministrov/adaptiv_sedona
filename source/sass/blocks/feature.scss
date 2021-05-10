@@ -13,18 +13,76 @@
   }
 }
 
+.feature__title--third {
+  @media (min-width: $tablet-width) {
+    width: 188px;
+    margin-left: 38px;
+  }
+}
+
+.feature__title--fourth {
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    margin-left: 30px;
+  }
+}
+
+.feature__title--fifth {
+  @media (min-width: $tablet-width) {
+    width: 149px;
+    margin-left: 56px;
+  }
+}
+
 .feature__number {
   @include font-size ($very-low-size);
   font-weight: inherit;
   line-height: 21px;
 }
 
+.feature__text {
+  @include font-size ($low-size);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.feature__text--third {
+  @media (min-width: $tablet-width) {
+    width: 189px;
+    margin-left: 38px;
+  }
+}
+
+.feature__text--fourth {
+  @media (min-width: $tablet-width) {
+    width: 148px;
+    margin-left: 28px;
+  }
+}
+
+.feature__text--fifth {
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-left: 33px;
+  }
+}
+
+
 .feature__wrapper {
   background-color: $light-blue-grey;
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
+  }
   & .feature__title {
     margin-top: 0;
     padding-top: 46px;
     color: $white-background;
+
+    @media (min-width: $tablet-width) {
+      max-width: 192px;
+      padding-top: 0;
+    }
   }
   & .feature__number {
     display: inline-block;
@@ -36,6 +94,14 @@
     margin-bottom: 0;
     padding-bottom: 30px;
     color: $white-background;
+
+    @media (min-width: $tablet-width) {
+      max-width: 282px;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 200;
+      color: $white-background;
+    }
   }
 }
 
@@ -43,9 +109,21 @@
   background-color: $light-blue-grey;
   color: $white-background;
 
+  @media (min-width: $tablet-width) {
+    max-height: 261px;
+    padding-top: 43px;
+    padding-bottom: 40px;
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
   & .feature__title {
     margin: 0;
     padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
   }
 
   & .feature__number {
@@ -58,11 +136,12 @@
   & .feature__text {
     margin: 0;
     padding-bottom: 35px;
-  }
-}
 
-.feature__text {
-  @include font-size ($low-size);
-  font-weight: 700;
-  text-transform: uppercase;
+    @media (min-width: $tablet-width) {
+      max-width: 184px;
+      font-size: 14px;
+      font-weight: 200;
+      color: $white-background;
+    }
+  }
 }

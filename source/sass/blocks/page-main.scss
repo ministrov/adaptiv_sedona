@@ -1,8 +1,15 @@
-@media (min-width: $tablet-width) {
-  .page-main__heading {
+
+.page-main__heading {
+  @media (min-width: $tablet-width) {
     margin-top: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 47px;
+  }
 }
+
 
 .page-main__title {
   @include font-size ($low-size);
@@ -20,6 +27,14 @@
     & br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $medium-size;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 461px;
   }
 }
 

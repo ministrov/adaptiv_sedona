@@ -5,7 +5,12 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
     background-size: 100% 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
   }
 
   &::after {
@@ -19,9 +24,14 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      height: 54px;
-      top: 340px;
+      height: 53px;
+      top: 341px;
       background-size: 100% 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 73px;
+      top: 321px;
     }
   }
 }

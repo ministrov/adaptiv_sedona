@@ -1,4 +1,8 @@
 .page-header {
   position: relative;
   z-index: 8;
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+  }
 }
