@@ -1,5 +1,7 @@
-// variables
+// Container
+$container-padding: 20px;
 
+// variables
 $white-background: #ffffff;
 $white-active: rgba(255, 255, 255, 0.3);
 $white-smoke: #eeeeee;
@@ -22,3 +24,6 @@ $medium-size: 21px;
 $low-size: 18px;
 $very-low-size: 14px;
 $big-size: 30px;
+// Viewport
+$tablet-width: 768px;
+$desktop-width: 960px;

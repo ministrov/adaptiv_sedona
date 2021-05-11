@@ -12,9 +12,11 @@
 }
 
 .video-pres__text {
+  width: 266px;
   @include font-size ($very-low-size);
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
   color: $arch-linux;
 }
 

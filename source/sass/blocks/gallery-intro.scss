@@ -1,0 +1,32 @@
+.gallery-intro {
+    position: relative;
+    background-image: url("../img/sedona-mobile.svg");
+    border-bottom: 1px solid $grey-disabled;
+}
+
+.gallery-intro::after {
+    position: absolute;
+    content: "";
+    bottom: 129px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: url("../img/intro-triangle.svg");
+}
+
+.gallery-intro__title {
+    @include font-size ($low-size);
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $black;
+}
+  
+.gallery-intro__text {
+  @include font-size ($very-low-size);
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $arch-linux;
+}

@@ -10,10 +10,12 @@
     background-image: url("../img/white-copy.svg");
     background-repeat: no-repeat;
   }
-}
 
-.reasons__section {
-  margin-top: 47px;
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .reasons__text {
@@ -23,15 +25,66 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  color: $arch-linux;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    color: $arch-linux;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .reasons__block {
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.reasons__block--first {
+  @media (min-width: $tablet-width) {
+    @include flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 41px;
+  }
+
+  & .feature__wrapper {
+    @media (min-width: $tablet-width) {
+      max-height: 261px;
+      padding-top: 40px;
+      padding-bottom: 43px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-height: none;
+      padding-top: 47px;
+      padding-bottom: 56px;
+      padding-left: 53px;
+      padding-right: 53px;
+    }
+  }
 }
 
 .reasons__block--second {
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+    flex-direction: row-reverse;
+    margin-top: 0;
+  }
 }
 
 .reasons__block-wrapper {
@@ -40,9 +93,55 @@
 
   & .reasons__block {
     border-bottom: 2px solid $light-grey;
+
+    @media (min-width: $tablet-width) {
+      max-width: 256px;
+      border-bottom: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 400px;
+    }
   }
 
   & .feature__text {
     margin-bottom: 24px;
+    @include font-size ($very-low-size);
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 62px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
+
+// .reasons__block-container .reasons__block:nth-child(2) .feature__title{
+//   @media (min-width: $tablet-width) {
+//     width: 162px;
+//     margin-left: 30px;
+//   }
+// }
+
+.reasons__desc {
+  @media (min-width: $tablet-width) {
+    padding-top: 157px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-bottom: 59px;
+  }
+}
+
+.reasons__block-container {
+  @media (min-width: $tablet-width) {
+    @include flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    justify-content: space-around;
+  }
+} 

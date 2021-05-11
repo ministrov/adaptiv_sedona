@@ -1,21 +1,42 @@
 .intro {
+  position: relative;
   background-color: $white-background;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+  }
 
   &::after {
     position: absolute;
     content: " ";
     width: 100%;
     height: 57px;
-    top: 388px;
+    top: 332px;
     left: 0;
     background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 53px;
+      top: 341px;
+      background-size: 100% 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 73px;
+      top: 321px;
+    }
   }
 }
 
-.intro__slogan {
-  @include font-size ($low-size);
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
+.intro__container {
+  padding-top: 90px;
+  padding-bottom: 85px;
 }

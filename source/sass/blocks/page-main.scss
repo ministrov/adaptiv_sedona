@@ -1,0 +1,54 @@
+
+.page-main__heading {
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 47px;
+  }
+}
+
+
+.page-main__title {
+  @include font-size ($low-size);
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 591px;
+    margin-left: 85px;
+    @include font-size ($medium-size);
+  }
+
+  @media (min-width: $tablet-width) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $medium-size;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 461px;
+  }
+}
+
+.page-main__reasons {
+  margin-top: 47px;
+}
+
+.page-main__search-hotel {
+  padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-left: 155px;
+    padding-right: 155px;
+  }
+}
